@@ -6,4 +6,9 @@ using namespace std;
 //! GraphicsLib mock default constructor
 GraphicsLib::GraphicsLib() {
     cout << "GraphicsLib::GraphicsLib()" << endl;
+    version = "Mock Library";
+}
+
+string GraphicsLib::getVersion( void ) {
+    return version;
 }
