@@ -1,0 +1,31 @@
+# Project
+*.a 
+glDemo 
+glTest
+
+# Mac
+.DS_Store
+
+# Vim
+*~
+*.swp
+*.swo
+
+# C/C++
+*.o
+*.a
+
+# Sphinx
+build
+
+# virtualenv
+_venv
+
+# Python
+*.pyc
+
+# Windows
+*.exe
+
+# experimenting
+sandbox
