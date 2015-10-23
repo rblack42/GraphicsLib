@@ -16,7 +16,7 @@ DOC_DIR 	= documentation
 BUILD_DIR	= build
 
 CXX			= g++
-CFLAGS		= -I$(LIB_DIR)
+CFLAGS		= -I$(LIB_DIR) -MMD
 LFLAGS  	= -L. -lcosc1337
 TFLAGS  	= -L. -lmock1337
 RM			= rm -rf
@@ -47,16 +47,18 @@ spelling:
 		cd $(DOC_DIR) $$ make spelling
 
 .PHONY:
-clean:
-	$(RM) $(APP) $(LIB) $(TEST) $(BUILD_DIR)
-
-.PHONY:
 publish:
 	rsync -avze ssh --progress $(BUILD_DIR)/html/ rblack@www.co-pylit.org:html/GrahicsLib
 
 # implicit build rules follow----------------------------------------
 include make/make_build.mak
 
+.PHONY:
+clean:
+	$(RM) $(APP) $(LIB) $(TEST) $(BUILD_DIR) $(DEPS)
+
 # uncomment this line to see defined variables with "make vars"
 include make/make_debug.mak
 
+# include dependency file
+-include $(DEPENDS)

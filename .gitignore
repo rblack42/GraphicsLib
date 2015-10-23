@@ -2,6 +2,7 @@
 *.a 
 glDemo 
 glTest
+make.deps
 
 # Mac
 .DS_Store

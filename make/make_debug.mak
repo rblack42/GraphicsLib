@@ -19,3 +19,7 @@ vars:
 	$(info LIB_OBJS => $(LIB_OBJS))
 	$(info TEST_OBJS => $(TEST_OBJS))
 	$(info MOCK_OBJS => $(MOCK_OBJS))
+
+# build dependencies
+	$(info DEPENDS => $(DEPENDS))
+
