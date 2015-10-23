@@ -16,7 +16,7 @@ BLD_DIR	= build
 
 CXX		= g++
 CFLAGS	= -I$(LIB_DIR)
-LFLAGS  = -L.
+LFLAGS  = -L. -lcosc1337
 RM		= rm -rf
 
 # fetch a list of all project source files
@@ -25,17 +25,28 @@ include make/make_sources.mak
 # all build targets are below this line -----------------------------
 all:	$(APP) $(LIB) $(TEST) 
 
+.PHONY:
+run:	$(APP)
+	./$(APP)
+
+.PHONY:
+test:	$(TEST)
+	./$(TEST)
+
+.PHONY:
 docs:
 		@mkdir -p $(BLD_DIR)/html/doxygen
 		cd $(DOC_DIR) $$ doxygen
 		cd $(DOC_DIR) && make html
 
+.PHONY:
 spelling:
 		@mkdir -p $(BLD_DIR)/html/spelling
 		cd $(DOC_DIR) $$ make spelling
 
+.PHONY:
 clean:
-	$(RM) $(BLD_DIR)
+	$(RM) $(APP) $(LIB) $(TEST) $(BLD_DIR)
 
 # implicit build rules follow----------------------------------------
 include make/make_build.mak
