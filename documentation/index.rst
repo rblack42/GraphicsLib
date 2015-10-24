@@ -12,6 +12,11 @@ to let students build a few animated 2D graphics projects.
 
     *
 
+..  toctree::
+    :maxdepth: 1
+
+    glossary
+
 Project Documentation
 *********************
 

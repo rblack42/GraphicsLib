@@ -48,7 +48,7 @@ spelling:
 
 .PHONY:
 publish:
-	rsync -avze ssh --progress $(BUILD_DIR)/html/ rblack@www.co-pylit.org:html/GrahicsLib
+	rsync -arvuz $(BUILD_DIR)/html/ rblack@www.co-pylit.org:html/GraphicsLib
 
 # implicit build rules follow----------------------------------------
 include make/make_build.mak

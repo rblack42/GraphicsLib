@@ -3,7 +3,7 @@ Graphics Lib
 
 ..  include::   /references.inc
 
-This graphics lib is a simple interface to freelut_ and OpenGL_ intended to be
+This graphics lib is a simple interface to freeglut_ and OpenGL_ intended to be
 used by beginning C++ students. The library is not a full featured one, instead
 it only provides a few primitives for drawing basic shapes on the screen. This
 library is used to introduce C++ classes to students, and gives them something
