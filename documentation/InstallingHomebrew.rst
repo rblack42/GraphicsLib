@@ -63,12 +63,14 @@ command:
     $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 Once this completes, you should run these commands to make sure your system is
-read to "brew" the latest verisons of the software.
+read to "brew" the latest versions of the software.
 
 ..  code-block:: text
 
     $ brew update
     $ brew doctor
 
-You should see a message telling you the tool ir ready for use.
+You should see a message telling you the tool is ready for use.
+
+..  vim:filetype=rst spell:
 

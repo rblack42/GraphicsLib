@@ -41,16 +41,18 @@ You will need to copy these directories tot he following locations:
 Mac
 ***
 
-I am assuming you are using Homebrew_ to manage adding tools on you system. See :ref:`installing-homebrew` is this package is not on your system.
+I am assuming you are using Homebrew_ to manage adding development tools on
+your system. See :ref:`installing-homebrew` if this package is not on your
+system.
 
-Here is how you install  the library  on oyur system:
+Here is how you install the freeglut_ library on your system:
 
 ..  code-block:: text
 
     $ brew install freeglut
 
 
-Linux    
+Linux
 *****
 
 ..  code-block:: text

@@ -5,14 +5,13 @@ Graphics Lib
 
 This graphics lib is a simple interface to freelut_ and OpenGL_ intended to be
 used by beginning C++ students. The library is not a full featured one, instead
-it only provides a few primatives for drawing basic shapes on the screen. This
+it only provides a few primitives for drawing basic shapes on the screen. This
 library is used to introduce C++ classes to students, and gives them something
 fun to play with as they learn this basic concept.
 
-The library is intended to be used by students by installing the required
-library components, then including one file in their programs and building the
-program easily. Since students show up on class with a variety of systems, this
-library will include build and install instructions for these platforms:
+The library is intended to be used by beginning students. Since students show
+up on class with a variety of systems, installation instructions are provided
+for these platforms:
 
     * PC running MinGW-w64_ from the command line
 
@@ -20,9 +19,9 @@ library will include build and install instructions for these platforms:
 
     * PC running code-blocks and MinGW-w64_
 
-    * Mics running Code::Blocks and Xcode (clang)
+    * Macs running `Code::Blocks` and `Xcode` (`clang`)
 
-    * Ubuntu Linux
+    * Ubuntu_ Linux
 
 See :ref:`installing-graphics-library` for details
 
