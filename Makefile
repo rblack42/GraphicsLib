@@ -5,20 +5,22 @@
 # list what to build here
 APP		= glDemo
 LIB		= libcosc1337.a
-MOCKLIB	= libmock1337.a
+WRAPLIB	= libGLwrap.a
+MOCKLIB	= libGLmock.a
 TEST	= glTest
 
 # list project directories here -------------------------------------
 SRC_DIR 	= src
 LIB_DIR 	= lib
 TEST_DIR 	= test
+WRAP_DIR	= GLUTwrap
 DOC_DIR 	= documentation
 BUILD_DIR	= build
 
 CXX			= g++
 CFLAGS		= -I$(LIB_DIR) -MMD
-LFLAGS  	= -L. -lcosc1337
-TFLAGS  	= -L. -lmock1337
+LFLAGS  	= -L. -lcosc1337 -lGLwrap
+TFLAGS  	= -L. -lcosc1337 -lGLmock
 RM			= rm -rf
 
 # fetch a list of all project source files

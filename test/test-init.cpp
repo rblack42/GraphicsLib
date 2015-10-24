@@ -5,6 +5,6 @@
 TEST_CASE("Glut is initialized") {
     GraphicsLib win;
 
-    REQUIRE( win.getVersion() == "Mock Library");
+    REQUIRE( win.getVersion() == VERSION);
 }
 
