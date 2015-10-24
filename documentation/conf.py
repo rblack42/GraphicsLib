@@ -50,7 +50,7 @@ breathe_projects_source = {
         ( "../", [ "src/main.cpp", 
                    "lib/GraphicsLib.h", 
                    "lib/GraphicsLib.cpp", 
-                   "test/main.cpp"
+                   "test/test_main.cpp"
                  ] 
         )
 }

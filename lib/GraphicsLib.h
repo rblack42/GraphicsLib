@@ -1,5 +1,5 @@
 /**
- * GraphicsLib CS1 basic graphics library
+ * \class GraphicsLib
  *
  * requires: freeglut, OpenGL
  */
@@ -10,9 +10,9 @@ using namespace std;
 
 class GraphicsLib {
     private:
-        string version;
+        string version; ///< current library version
     public:
-        GraphicsLib();
-        string getVersion( void );
+        GraphicsLib();  ///< default constructor
+        string getVersion( void );  /// returns library version
 };
 

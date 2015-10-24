@@ -1,4 +1,5 @@
 //! CS1 Graphics library using OpenGL and freeglut
+//
 #include <GraphicsLib.h>
 #include <string>
 using namespace std;
@@ -8,5 +9,6 @@ GraphicsLib::GraphicsLib() {
 }
 
 string GraphicsLib::getVersion( void ) {
+    /// return library version string
     return version;
 }
