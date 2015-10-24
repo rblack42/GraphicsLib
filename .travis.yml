@@ -6,6 +6,7 @@ addons:
     - build-essential
     - doxygen
     - enchant
+    - freeglut2-dev
 
 python:
   - "2.7"
